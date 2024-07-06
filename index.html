@@ -1,49 +1,52 @@
+<!--Boilerplate-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kev.Dev</title>
+    <!--link external resources-->
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>My Works</title>
 </head>
+<!--page navigation with semantic tags-->
 <body>
-    <h1>Kev.Dev</h1>
-    <h2>Aspiring Web Developer</h2>
-    <p>Welcome to my site. This marks the first website I have published to date. I began this journey
-        of Developer training in earnest March 2024. The site will evolve as I learn new skills and apply them.
-    </p>
-    <hr />
-    <h3>The goals</h3>
-    <ul>
-        <li>Learn frontend - HTML, CSS, and Javascript</li>
-        <li>Learn design basics - Colors, Typography, Layout, Responsive sites</li>
-        <li>Learn backend - Javascript, Python, Database</li>
-        <li>Learn process - Versioning, Git, Planning, Publishing</li>
-    </ul>
-    <h3>My current training resources</h3>
-    <ul>
-        <li>
-            <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard's CS50x</a>
-        </li>
-        <li>
-            <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=ST21MT60724">Dr. Angela Yu's Bootcamp</a>
-        </li>
-    </ul>
-    <h3>The Plan</h3>
-    <ul>
-        <li>Finish these courses - completing projects to the best of my ability</li>
-        <li>Display completed projects on this site</li>
-        <li>Code - stay out of tutorial hell</li>
-        <li>Build momentum</li>
-    </ul>
-    <hr />
-    <a href="#"><h4>About me</h4></a>
-    <a href="#"><h4>Completed Projects</h4></a>
-    <a href="#"><h4>Contact</h4></a>
-    <a href="./public/resume.html"><h4>My Resume</h4></a>
-    <footer>
+    <header class="header">
+        <nav class="nav-grid">
+            <div class="nav-item nav1"><img class="favicon" src="./assets/images/favicon.png" alt="brand icon"></div>
+            <div class="nav-item nav2"><a href="./index.html">home</a></div>
+            <div class="nav-item nav3"><a href="./public/projects.html">projects</a></div>
+            <div class="nav-item nav4"><a href="./public/about.html">about</a></div>
+        </nav>
+    </header>
+<!--sectioned body with semantic tags-->
+    <main class="main">
+        <section class="hero">
+            <div class="hero-h1">
+                <h1>kevin harris</h1>
+                <h4>aspiring web developer</h4>
+            </div>
+            <div class="hero-text"><p>Welcome to my portfolio. I began my journey into Web Development in March 2024. This site will showcase my progression, and provide a history of my evolution. My present focus is learning HTML/CSS fundamentals, as well as leveraging grid and flexbox to make responsive sites. Also in my focus is typefaces, color coordination and layout.</p></div>
+            <div class="hero-img"><img src="./assets/images/hero-img.png" alt=""></div>
+        </section>
+        <section class="links">
+            <div class="links-img"><img src="./assets/images/linksimg.png" alt="decoration"></div>
+            <div class="links-works"><a href="./public/projects.html"><h3>projects</h3></a></div>
+            <div class="links-about"><a href="./public/about.html"><h3>about</h3></a></div>
+            <div class="links-works-img"><img class="works-img" src="./assets/images/projectsimg.png" alt="envelopes"></div>
+            <div class="links-about-img"><img src="./assets/images/about-img.png" alt="flowers" class="about-img"></div>
+        </section>
+    </main>
+<!--footer with semantic tags-->
+    <footer class="footer">
         <small>
-            <p></p>&copy; Kev.Dev 2024 Version 0.1 of page June 2024
+            <p></p>&copy; Kev.Dev 2024 Version 0.3 of page July 2024
         </small>
+        <small>
+            <a href="./archive/index.html" target="_blank">Version 0.2</a>
+        </small>
+
     </footer>
+    
 </body>
 </html>
